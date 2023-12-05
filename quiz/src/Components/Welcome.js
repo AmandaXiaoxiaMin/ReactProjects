@@ -3,22 +3,22 @@ import './Welcome.css';
 import { QuizContext } from '../Helpers/Contexts';
 
 function Welcome() {
-	const { modeState, setModeState } = useContext(QuizContext);
+	const { setMode } = useContext(QuizContext);
 
 	return (
-		<div className="welcome-container">
+		<div className="container">
 			<div className="welcome-title">Welcome to Quiz App</div>
 			<div>
 				<button
 					onClick={() => {
-						setModeState('createQuiz');
+						setMode('createQuiz');
 					}}
 				>
 					Create a Quiz
 				</button>
 				<button
 					onClick={() => {
-						setModeState('takeQuiz');
+						setMode('listQuizzes');
 					}}
 				>
 					Take a Quiz

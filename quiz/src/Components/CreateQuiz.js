@@ -5,7 +5,7 @@ import { QuizBank } from '../Helpers/QuizBank';
 import './CreateQuiz.css';
 
 function CreateQuiz() {
-	const { modeState, setModeState } = useContext(QuizContext);
+	const { mode, setMode } = useContext(QuizContext);
 
 	return <div className="create-quiz-container">create a quiz</div>;
 }

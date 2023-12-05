@@ -1,13 +1,31 @@
-.take-quiz-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: lightseagreen;
+.question {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.option {
+	background-color: white;
+	color: lightseagreen;
+	width: 200px;
+	height: 30px;
 	border-radius: 5px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 16px;
+}
 
-	width: 700px;
-	height: 700px;
+.option-selected {
+	font-weight: bold;
+	font-size: 20px;
+}
 
-	font-family: Arial;
+.next {
+	margin-top: 15px;
+}
+
+.disable-btn {
+	cursor: auto;
+	color: rgb(146, 243, 238);
 }

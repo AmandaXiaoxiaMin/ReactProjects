@@ -1,6 +1,6 @@
 .question {
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .option {
@@ -10,19 +10,21 @@
 	height: 30px;
 	border-radius: 5px;
 	margin-bottom: 5px;
-	vertical-align: middle;
-	display: inline-block;
 	cursor: pointer;
-	font-size: 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .option-selected {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 22px;
 }
 
-.next {
-	margin-top: 15px;
+.next,
+.finish {
+	margin-top: 20px;
 }
 
 .disable-btn {

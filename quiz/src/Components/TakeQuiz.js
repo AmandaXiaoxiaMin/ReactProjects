@@ -49,7 +49,7 @@ function TakeQuiz() {
 
 	return (
 		<div className="container">
-			<div className="question">{questions[questionNum].question}</div>
+			<div className="question">Question: {questions[questionNum].question}</div>
 			<div
 				className="option optionA"
 				onClick={() => {

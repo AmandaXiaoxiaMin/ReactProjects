@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { QuizContext } from '../Helpers/Contexts';
+import { QuizBank } from '../Helpers/QuizBank';
 
 import './CreateQuiz.css';
 

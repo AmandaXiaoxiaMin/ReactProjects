@@ -1,9 +1,13 @@
-.App {
+.take-quiz-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: lightseagreen;
+	border-radius: 5px;
 
-	color: white;
+	width: 700px;
+	height: 700px;
+
 	font-family: Arial;
 }

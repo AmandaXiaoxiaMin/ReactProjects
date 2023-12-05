@@ -1,0 +1,16 @@
+.welcome-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: lightseagreen;
+	border-radius: 5px;
+
+	width: 700px;
+	height: 700px;
+}
+
+.welcome-title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}

@@ -159,7 +159,7 @@ function CreateQuestion() {
 					</select>
 				</div>
 			</div>
-			<div>
+			<div className="button-container">
 				<button onClick={createAnotherQuestion}>Next Question</button>
 				<button onClick={finishCreatingQuiz}>Finish</button>
 			</div>

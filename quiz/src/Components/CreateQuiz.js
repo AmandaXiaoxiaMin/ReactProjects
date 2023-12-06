@@ -27,9 +27,11 @@ function CreateQuiz() {
 			<div>
 				Quiz name: <input className="quiz-name-input" onChange={handleOnchange} type="text"></input>
 			</div>
-			<button className="create-next-btn disable-btn" onClick={createQuestions}>
-				Next
-			</button>
+			<div className="button-container">
+				<button className="create-next-btn disable-btn" onClick={createQuestions}>
+					Next
+				</button>
+			</div>
 		</div>
 	);
 }

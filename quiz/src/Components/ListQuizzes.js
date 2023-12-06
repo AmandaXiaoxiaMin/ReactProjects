@@ -51,6 +51,11 @@ function ListQuizzes() {
 			)}
 
 			{QuizBank.length !== 0 && <Table data={QuizBank} columns={columns} />}
+			{QuizBank.length !== 0 && (
+				<div className="button-container">
+					<button onClick={goBackToWelcome}>Back</button>
+				</div>
+			)}
 		</div>
 	);
 }

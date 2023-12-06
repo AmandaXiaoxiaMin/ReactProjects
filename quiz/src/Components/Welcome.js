@@ -19,7 +19,7 @@ function Welcome() {
 	return (
 		<div className="container">
 			<div className="welcome-title">Welcome to Quiz App</div>
-			<div>
+			<div className="button-container">
 				<button
 					onClick={() => {
 						resetQuiz();

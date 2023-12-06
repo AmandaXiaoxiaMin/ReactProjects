@@ -16,7 +16,7 @@ function EndTakeQuiz() {
 			<div>
 				{score} / {questions.length}
 			</div>
-			<div>
+			<div className="button-container">
 				<button onClick={takeAnotherQuiz}>Take another Quiz</button>
 				<button onClick={goBack}>Back</button>
 			</div>

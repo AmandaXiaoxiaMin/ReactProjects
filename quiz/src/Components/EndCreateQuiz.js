@@ -3,7 +3,7 @@ import { QuizContext } from '../Helpers/Contexts';
 import { QuizBank } from '../Helpers/QuizBank';
 
 function EndCreateQuiz() {
-	const { setMode, setNewQuiz, setQuestions } = useContext(QuizContext);
+	const { setMode, newQuiz, setNewQuiz, setQuestions } = useContext(QuizContext);
 
 	function resetQuiz() {
 		setNewQuiz({
@@ -36,9 +36,12 @@ function EndCreateQuiz() {
 
 	return (
 		<div className="container">
-			<div>Quiz Created.</div>
-			{console.log(QuizBank)}
 			<div>
+				<label>Quiz created:</label>
+				{newQuiz.quiz_name}
+			</div>
+			{console.log(QuizBank)}
+			<div className="button-container">
 				<button onClick={createAnotherQuiz}>Create Another Quiz</button>
 				<button onClick={goBack}>Back</button>
 			</div>

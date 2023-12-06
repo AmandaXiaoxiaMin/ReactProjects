@@ -102,12 +102,18 @@ function CreateQuestion() {
 			<div className="quiz-name">{newQuiz.quiz_name}</div>
 			<div className="options-container">
 				<div>Question:</div>
-				<input name="question" onChange={handleOnchange} type="text" value={newQuestion.question} />
+				<input
+					className="text-input"
+					name="question"
+					onChange={handleOnchange}
+					type="text"
+					value={newQuestion.question}
+				/>
 				<div>Options:</div>
 				<div>
 					<label>A:</label>
 					<input
-						className="option-input"
+						className="text-input"
 						name="optionA"
 						onChange={handleOnchange}
 						type="text"
@@ -117,7 +123,7 @@ function CreateQuestion() {
 				<div>
 					<label>B:</label>
 					<input
-						className="option-input"
+						className="text-input"
 						name="optionB"
 						onChange={handleOnchange}
 						type="text"
@@ -127,7 +133,7 @@ function CreateQuestion() {
 				<div>
 					<label>C:</label>
 					<input
-						className="option-input"
+						className="text-input"
 						name="optionC"
 						onChange={handleOnchange}
 						type="text"
@@ -137,7 +143,7 @@ function CreateQuestion() {
 				<div>
 					<label>D:</label>
 					<input
-						className="option-input"
+						className="text-input"
 						name="optionD"
 						onChange={handleOnchange}
 						type="text"

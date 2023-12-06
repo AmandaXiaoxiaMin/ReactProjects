@@ -18,22 +18,15 @@ function PreviewQuiz() {
 		<div className="container">
 			<div>
 				<div className="quiz-basic-info">
-					<div>
-						<label>Quiz name:</label>
-						{newQuiz.quiz_name}
-					</div>
-					<div>
-						<label>Created date:</label>
-						{newQuiz.created_date}
-					</div>
+					<label>Quiz name:</label>
+					{newQuiz.quiz_name}
 				</div>
 				<div className="quiz-questions">
-					{newQuiz.questions.map((quest) => {
-						console.log(quest);
+					{newQuiz.questions.map((quest, index) => {
 						return (
 							<div>
 								<div>
-									<label>Question:</label>
+									<label>Question {index + 1}:</label>
 									{quest.question}
 								</div>
 								<div>

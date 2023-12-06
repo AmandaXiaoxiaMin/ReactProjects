@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { QuizContext } from '../Helpers/Contexts';
-
 import './CreateQuiz.css';
 
 function CreateQuiz() {
@@ -11,6 +10,7 @@ function CreateQuiz() {
 			...newQuiz,
 			quiz_name: e.target.value,
 		});
+
 		if (e.target.value === '') {
 			document.querySelector('.create-next-btn').classList.add('disable-btn');
 		} else {
@@ -24,9 +24,11 @@ function CreateQuiz() {
 
 	return (
 		<div className="container">
-			<div>
-				Quiz name: <input className="quiz-name-input" onChange={handleOnchange} type="text"></input>
+			<div className="quiz-name-input-container">
+				<label>Quiz name:</label>
+				<input className="text-input" onChange={handleOnchange} type="text"></input>
 			</div>
+
 			<div className="button-container">
 				<button className="create-next-btn disable-btn" onClick={createQuestions}>
 					Next

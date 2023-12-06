@@ -6,4 +6,8 @@
 
 	color: white;
 	font-family: Arial;
+	height: 100%;
+	width: 100%;
+
+	padding-top: 50px;
 }

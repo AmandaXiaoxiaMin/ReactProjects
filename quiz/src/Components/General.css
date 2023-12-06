@@ -13,13 +13,10 @@ button {
 .container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	background-color: lightseagreen;
-	border-radius: 5px;
 
-	width: 700px;
-	height: 700px;
+	width: 100%;
+	height: 100%;
 }
 
 .text-input {
@@ -42,5 +39,6 @@ label {
 	align-items: center;
 	column-gap: 20px;
 
-	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

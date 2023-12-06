@@ -42,14 +42,13 @@ function ListQuizzes() {
 
 	return (
 		<div className="container">
+			{QuizBank.length === 0 && <div>There is no quiz yet.</div>}
 			{QuizBank.length === 0 && (
-				<div>
-					<div>There is no quiz yet.</div>
+				<div className="button-container">
 					<button onClick={createQuiz}>Create a Quiz</button>
 					<button onClick={goBackToWelcome}>Back</button>
 				</div>
 			)}
-
 			{QuizBank.length !== 0 && <Table data={QuizBank} columns={columns} />}
 			{QuizBank.length !== 0 && (
 				<div className="button-container">

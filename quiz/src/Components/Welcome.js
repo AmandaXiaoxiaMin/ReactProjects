@@ -3,7 +3,18 @@ import './Welcome.css';
 import { QuizContext } from '../Helpers/Contexts';
 
 function Welcome() {
-	const { setMode } = useContext(QuizContext);
+	const { setMode, setNewQuiz, setQuestions } = useContext(QuizContext);
+
+	function resetQuiz() {
+		setNewQuiz({
+			quiz_num: -1,
+			quiz_name: '',
+			created_date: '',
+			questions: [],
+		});
+
+		setQuestions([]);
+	}
 
 	return (
 		<div className="container">
@@ -11,6 +22,7 @@ function Welcome() {
 			<div>
 				<button
 					onClick={() => {
+						resetQuiz();
 						setMode('createQuiz');
 					}}
 				>

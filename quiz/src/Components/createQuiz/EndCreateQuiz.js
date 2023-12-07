@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { QuizContext } from '../../Helpers/Contexts';
-import { QuizBank } from '../../Helpers/QuizBank';
 
 function EndCreateQuiz() {
 	const { setMode, newQuiz, setNewQuiz, setQuestions } = useContext(QuizContext);
@@ -24,15 +23,6 @@ function EndCreateQuiz() {
 	const goBack = () => {
 		setMode('welcome');
 	};
-
-	function resetQuiz() {
-		setNewQuiz({
-			quiz_num: -1,
-			quiz_name: '',
-			created_date: '',
-			questions: [],
-		});
-	}
 
 	return (
 		<div className="container">

@@ -1,10 +1,9 @@
 import { useContext, useState } from 'react';
 import { QuizContext } from '../../Helpers/Contexts';
 import './TakeQuiz.css';
-import { QuizBank } from '../../Helpers/QuizBank';
 
 function TakeQuiz() {
-	const { mode, setMode, questions, setQuestions, questionNum, setQuestionNum, score, setScore } =
+	const { setMode, questions, questionNum, setQuestionNum, score, setScore } =
 		useContext(QuizContext);
 
 	const [selected, setSelected] = useState('');

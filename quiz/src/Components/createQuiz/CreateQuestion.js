@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../../Helpers/Contexts';
 import './CreateQuestion.css';
-import { QuizBank } from '../Helpers/QuizBank';
+import { QuizBank } from '../../Helpers/QuizBank';
 
 function CreateQuestion() {
 	const { setMode, newQuiz, setNewQuiz } = useContext(QuizContext);
@@ -65,7 +65,6 @@ function CreateQuestion() {
 		const day = today.getDate().toString().padStart(2, '0');
 
 		const formattedDate = `${year}-${month}-${day}`;
-		console.log(formattedDate);
 		return formattedDate;
 	}
 

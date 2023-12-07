@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import Table from './Table';
-import { QuizContext } from '../Helpers/Contexts';
-import { QuizBank } from '../Helpers/QuizBank';
+import Table from '../reuse/Table';
+import { QuizContext } from '../../Helpers/Contexts';
+import { QuizBank } from '../../Helpers/QuizBank';
 
 function ListQuizzes() {
 	const { setMode, setQuestions, setQuestionNum, setScore } = useContext(QuizContext);

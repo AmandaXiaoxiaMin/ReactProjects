@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../../Helpers/Contexts';
 import './CreateQuiz.css';
 
 function CreateQuiz() {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../../Helpers/Contexts';
 
 function EndTakeQuiz() {
 	const { setMode, score, questions } = useContext(QuizContext);

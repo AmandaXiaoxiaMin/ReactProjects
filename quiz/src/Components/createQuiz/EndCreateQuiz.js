@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
-import { QuizBank } from '../Helpers/QuizBank';
+import { QuizContext } from '../../Helpers/Contexts';
+import { QuizBank } from '../../Helpers/QuizBank';
 
 function EndCreateQuiz() {
 	const { setMode, newQuiz, setNewQuiz, setQuestions } = useContext(QuizContext);
@@ -40,7 +40,6 @@ function EndCreateQuiz() {
 				<label>Quiz created:</label>
 				{newQuiz.quiz_name}
 			</div>
-			{console.log(QuizBank)}
 			<div className="button-container">
 				<button onClick={createAnotherQuiz}>Create Another Quiz</button>
 				<button onClick={goBack}>Back</button>

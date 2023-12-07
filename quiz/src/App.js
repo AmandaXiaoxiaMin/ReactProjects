@@ -1,16 +1,16 @@
 import './App.css';
-import './Components/General.css';
+import './Components/reuse/General.css';
 import React, { useState } from 'react';
 
 import { QuizContext } from './Helpers/Contexts';
-import Welcome from './Components/Welcome';
-import CreateQuiz from './Components/CreateQuiz';
-import ListQuizzes from './Components/ListQuizzes';
-import TakeQuiz from './Components/TakeQuiz';
-import EndTakeQuiz from './Components/EndTakeQuiz';
-import CreateQuestion from './Components/CreateQuestion';
-import EndCreateQuiz from './Components/EndCreateQuiz';
-import PreviewQuiz from './Components/PreviewQuiz';
+import Welcome from './Components/welcome/Welcome';
+import CreateQuiz from './Components/createQuiz/CreateQuiz';
+import ListQuizzes from './Components/takeQuiz/ListQuizzes';
+import TakeQuiz from './Components/takeQuiz/TakeQuiz';
+import EndTakeQuiz from './Components/takeQuiz/EndTakeQuiz';
+import CreateQuestion from './Components/createQuiz/CreateQuestion';
+import EndCreateQuiz from './Components/createQuiz/EndCreateQuiz';
+import PreviewQuiz from './Components/createQuiz/PreviewQuiz';
 
 function App() {
 	const [mode, setMode] = useState('welcome');

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../../Helpers/Contexts';
 import './PreviewQuiz.css';
-import { QuizBank } from '../Helpers/QuizBank';
+import { QuizBank } from '../../Helpers/QuizBank';
 
 function PreviewQuiz() {
 	const { setMode, newQuiz } = useContext(QuizContext);

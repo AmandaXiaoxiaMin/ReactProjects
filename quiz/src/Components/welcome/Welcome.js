@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Welcome.css';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../../Helpers/Contexts';
 
 function Welcome() {
 	const { setMode, setNewQuiz, setQuestions } = useContext(QuizContext);

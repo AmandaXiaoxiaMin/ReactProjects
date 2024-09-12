@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-main;
+}
+
+button {
+	@apply bg-appGreen text-white px-2 py-1 border-appGreen border-2 rounded;
+}
+
+.img-btn {
+	@apply h-5 ml-2 hover:cursor-pointer;
+}
+
+.light-dark-btn {
+	@apply h-8 hover:cursor-pointer;
+}

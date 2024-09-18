@@ -1,0 +1,1 @@
+This To Do List project demonstrates the usage of React & Tailwind for frontend, and Express & MySql for backend.

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
-import Axios from 'axios';
+import AxiosInstance from '../axios';
 
 function ToDoListItem({ item, getAndShowAllItems }) {
 	const [editMode, setEditMode] = useState(false);
 
 	const removeItem = async () => {
 		try {
-			await Axios.post('http://localhost:3001/removeItem', { id: item.id });
+			await AxiosInstance.post('/removeItem', { id: item.id });
 			getAndShowAllItems();
 		} catch (err) {
 			console.error(err);
@@ -16,7 +16,7 @@ function ToDoListItem({ item, getAndShowAllItems }) {
 
 	const updateItemName = async (newName) => {
 		try {
-			await Axios.post('http://localhost:3001/updateItemName', {
+			await AxiosInstance.post('/updateItemName', {
 				id: item.id,
 				name: newName,
 			});
@@ -33,7 +33,7 @@ function ToDoListItem({ item, getAndShowAllItems }) {
 
 	const markItemDone = async () => {
 		try {
-			await Axios.post('http://localhost:3001/markItemDone', { id: item.id });
+			await AxiosInstance.post('/markItemDone', { id: item.id });
 			getAndShowAllItems();
 		} catch (err) {
 			console.error(err);

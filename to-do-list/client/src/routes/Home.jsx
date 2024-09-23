@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import ModeSwitchBar from 'components/ModeSwitchBar';
 import ToDoInput from 'components/ToDoInput';
 import ToDoList from 'components/ToDoList';
-import Axios from 'axios';
+import AxiosInstance from '../axios';
 
 function Home() {
 	const [items, setItems] = useState([]);
 
 	const getAndShowAllItems = async () => {
 		try {
-			const response = await Axios.get('http://localhost:3001/getAllItems');
+			const response = await AxiosInstance.get('/getAllItems');
 			setItems(response.data);
 		} catch (err) {
 			console.error(err);
@@ -22,7 +22,7 @@ function Home() {
 
 	const clearCompletedItems = async () => {
 		try {
-			await Axios.post('http://localhost:3001/clearCompletedItems');
+			await AxiosInstance.post('/clearCompletedItems');
 			getAndShowAllItems();
 		} catch (err) {
 			console.error(err);

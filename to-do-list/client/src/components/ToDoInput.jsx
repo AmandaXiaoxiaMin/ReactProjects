@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
-import Axios from 'axios';
+import AxiosInstance from '../axios';
 
 export default function ToDoInput({ getAndShowAllItems }) {
 	const [name, setName] = useState('');
 
 	const addItem = async () => {
 		try {
-			await Axios.post('http://localhost:3001/addItem', { name });
+			await AxiosInstance.post('/addItem', { name });
 			getAndShowAllItems();
 			setName('');
 		} catch (err) {
